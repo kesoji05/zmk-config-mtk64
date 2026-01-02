@@ -1,7 +1,10 @@
 #include "mtk64.dtsi"
 #include "mtk64_trackball.dtsi"
+
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
 #include <behaviors/input_gestures_accel.dtsi>
 
 &default_transform {
@@ -11,13 +14,13 @@
 /*
 &kscan0 {
     gpios
-        = <&xiao_d 1 GPIO_ACTIVE_HIGH> 
-        , <&xiao_d 2 GPIO_ACTIVE_HIGH> 
-        , <&xiao_d 3 GPIO_ACTIVE_HIGH> 
+        = <&xiao_d 1 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 2 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 3 GPIO_ACTIVE_HIGH>
         , <&xiao_d 6 GPIO_ACTIVE_HIGH>
-        , <&xiao_d 7 GPIO_ACTIVE_HIGH> 
-        , <&xiao_d 8 GPIO_ACTIVE_HIGH> 
-        , <&xiao_d 9 GPIO_ACTIVE_HIGH> 	
+        , <&xiao_d 7 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 8 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 9 GPIO_ACTIVE_HIGH>
     ;
 };
 */
@@ -26,12 +29,73 @@
     status = "okay";
 };
 
-&trackball { 
+&trackball {
     status = "okay";
 };
 
 &trackball_listener {
     status = "okay";
+
+    /*
+     * (1) デフォルトレイヤー(0)のカーソル速度を「可変(加速度)」にする
+     *     既存の処理チェーンを壊しにくいように process-next で “追加で挟む” 方式。
+     */
+    accel_default_layer {
+        layers = <0>;
+        input-processors = <&pointer_accel>;
+        process-next;
+    };
+
+    /*
+     * (2) レイヤー3のスクロール上下を「上に弾く→上にスクロール」にする
+     *
+     * 既存設定のノード名が環境で違うことがあるので、
+     * よくある2パターン(scroller / scroll)を両方上書きしています。
+     *
+     * もしあなたの設定が別名なら、この2つのノード名を
+     * mtk64_trackball.dtsi 側の実名に合わせてください（後述）。
+     */
+    scroller {
+        layers = <3>;
+        input-processors = <
+            &zip_xy_to_scroll_mapper
+            &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT
+            &zip_scroll_scaler 1 16
+        >;
+    };
+
+    scroll {
+        layers = <3>;
+        input-processors = <
+            &zip_xy_to_scroll_mapper
+            &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT
+            &zip_scroll_scaler 1 16
+        >;
+    };
 };
 
-&xiao_serial { status = "disabled"; };
+&xiao_serial {
+    status = "disabled";
+};
+
+/*
+ * pointer_accel のチューニング値（まずは “効く” 初期値）
+ *
+ * factor は 1000=等倍。
+ * 例: min-factor=600 → 0.6倍（遅い動きは細かく）
+ *     max-factor=2500 → 2.5倍（速い動きは加速）
+ *
+ * speed-* は count/sec ベース（加速度モジュールの説明）。
+ */
+&pointer_accel {
+    input-type = <INPUT_EV_REL>;
+    track-remainders;
+
+    min-factor = <600>;
+    max-factor = <2500>;
+
+    speed-threshold = <400>;
+    speed-max = <2000>;
+
+    acceleration-exponent = <2>;
+};
