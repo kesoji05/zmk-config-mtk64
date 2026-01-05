@@ -138,9 +138,9 @@
             bindings =
                 <&kp LG(R)>,
                 <&macro_wait_time 500>,
-                <&kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp W &kp W &kp W &kp DOT &kp N &kp O &kp T &kp I &kp O &kp N &kp DOT &kp S &kp O>,
+                <&kp H>,
                 <&macro_wait_time 1>,
-                <&kp ENTER>;
+                <&kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp W &kp W &kp W &kp DOT &kp N &kp O &kp T &kp I &kp O &kp N &kp DOT &kp S &kp O &kp ENTER>;
 
             label = "LAUNCH_NOTION";
         };
@@ -163,9 +163,9 @@
             bindings =
                 <&kp LG(R)>,
                 <&macro_wait_time 500>,
-                <&kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp X &kp DOT &kp C &kp O &kp M &kp FSLH &kp H &kp O &kp M &kp E &kp QMARK &kp L &kp A &kp N &kp G &kp EQUAL &kp J &kp A>,
+                <&kp H>,
                 <&macro_wait_time 1>,
-                <&kp ENTER>;
+                <&kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp X &kp DOT &kp C &kp O &kp M &kp FSLH &kp H &kp O &kp M &kp E &kp QMARK &kp L &kp A &kp N &kp G &kp EQUAL &kp J &kp A &kp ENTER>;
 
             label = "LAUNCHE_X";
         };
@@ -176,9 +176,9 @@
             bindings =
                 <&kp LG(R)>,
                 <&macro_wait_time 500>,
-                <&kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp C &kp H &kp A &kp T &kp G &kp P &kp T &kp DOT &kp C &kp O &kp M &kp FSLH &kp J &kp A &kp MINUS &kp LS(J) &kp LS(P) &kp FSLH>,
+                <&kp H>,
                 <&macro_wait_time 1>,
-                <&kp ENTER>;
+                <&kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp C &kp H &kp A &kp T &kp G &kp P &kp T &kp DOT &kp C &kp O &kp M &kp FSLH &kp J &kp A &kp MINUS &kp LS(J) &kp LS(P) &kp FSLH &kp ENTER>;
 
             label = "LAUNCHE_CHATGPT";
         };
@@ -189,8 +189,9 @@
             bindings =
                 <&kp LG(R)>,
                 <&macro_wait_time 500>,
+                <&kp H>,
                 <&macro_wait_time 1>,
-                <&kp ENTER &kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp S &kp E &kp C &kp U &kp R &kp E &kp DOT &kp F &kp R &kp E &kp E &kp E &kp DOT &kp C &kp O &kp DOT &kp J &kp P &kp FSLH>;
+                <&kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp S &kp E &kp C &kp U &kp R &kp E &kp DOT &kp F &kp R &kp E &kp E &kp E &kp DOT &kp C &kp O &kp DOT &kp J &kp P &kp FSLH &kp ENTER>;
 
             label = "LAUNCHE_FREEE";
         };
@@ -242,7 +243,7 @@
 
         layer_5Launcher {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &launch_X  &launch_ChatGPT  &trans  &trans  &trans  &trans  &launch_notion  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &launch_freee  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &launch_X  &launch_ChatGPT  &trans  &trans  &trans  &trans  &launch_notion  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
