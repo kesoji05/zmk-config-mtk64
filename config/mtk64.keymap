@@ -37,6 +37,16 @@
 
             tap-ms = <20>; // スクロールのタップ時間
         };
+
+        ht_tab_alt: ht_tab_alt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_TAB_ALT";
+            bindings = <&alt_tab_stay>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 };
 
@@ -106,6 +116,21 @@
             bindings = <&kp LG(R) &kp LA(DOWN)>;
             label = "WINR_ALT_UP";
         };
+
+        alt_tab_stay: alt_tab_stay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ALT_TAB_STAY";
+        };
     };
 
     keymap {
@@ -113,7 +138,7 @@
 
         default_layer {
             bindings = <
-&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &lt 4 SEMICOLON  &lt 3 GRAVE  &kp A  &kp S  &kp D  &kp F  &kp G  &lt 2 H  &lt 2 J  &lt 2 K  &lt 2 L  &kp UP_ARROW  &kp APOS  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp INT_RO  &kp LBKT  &kp N  &kp M  &lt 3 SLASH  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LCTRL  &kp LGUI  &mkp LCLK  &lt 2 SPACE  &mt LWIN DELETE  &lt 3 ENTER  &kp COMMA  &kp DOT  &kp LS(LG(S))  &WINR_ALT_UP  &mkp RCLK  &kp RCTRL  &kp ENTER  &tog 2  &kp LEFT_ALT  &mt LEFT_WIN BACKSPACE  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3
+&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &ht_tab_alt 0 TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &lt 4 SEMICOLON  &lt 3 GRAVE  &kp A  &kp S  &kp D  &kp F  &kp G  &lt 2 H  &lt 2 J  &lt 2 K  &lt 2 L  &kp UP_ARROW  &kp APOS  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp INT_RO  &kp LBKT  &kp N  &kp M  &lt 3 SLASH  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LCTRL  &kp LGUI  &mkp LCLK  &lt 2 SPACE  &mt LWIN DELETE  &lt 3 ENTER  &kp COMMA  &kp DOT  &kp LS(LG(S))  &WINR_ALT_UP  &mkp RCLK  &kp RCTRL  &kp ENTER  &tog 2  &kp LEFT_ALT  &mt LEFT_WIN BACKSPACE  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3
             >;
 
             sensor-bindings =
