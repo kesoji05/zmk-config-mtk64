@@ -80,6 +80,17 @@
         };
     };
 
+    macros {
+        reg_folder: reg_folder {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K_APP &kp N &kp A>;
+            label = "REG_FOLDER";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
