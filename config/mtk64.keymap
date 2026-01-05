@@ -73,6 +73,11 @@
             bindings = <&bootloader>;
             key-positions = <13 14 15 16>;
         };
+
+        RCTRL_L {
+            bindings = <&kp RCTRL>;
+            key-positions = <25 26 27>;
+        };
     };
 
     keymap {
