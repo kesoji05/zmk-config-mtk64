@@ -131,6 +131,69 @@
 
             label = "ALT_TAB_STAY";
         };
+
+        launch_notion: launch_notion {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LG(R)>,
+                <&macro_wait_time 500>,
+                <&kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp W &kp W &kp W &kp DOT &kp N &kp O &kp T &kp I &kp O &kp N &kp DOT &kp S &kp O>,
+                <&macro_wait_time 1>,
+                <&kp ENTER>;
+
+            label = "LAUNCH_NOTION";
+        };
+
+        DO_NOT_EDIT: DO_NOT_EDIT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LG(R)>,
+                <&macro_wait_time 500>,
+                <&macro_wait_time 1>,
+                <&kp ENTER>;
+
+            label = "DO_NOT_EDIT";
+        };
+
+        launche_X: launche_X {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LG(R)>,
+                <&macro_wait_time 500>,
+                <&kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp X &kp DOT &kp C &kp O &kp M &kp FSLH &kp H &kp O &kp M &kp E &kp QMARK &kp L &kp A &kp N &kp G &kp EQUAL &kp J &kp A>,
+                <&macro_wait_time 1>,
+                <&kp ENTER>;
+
+            label = "LAUNCHE_X";
+        };
+
+        launche_ChatGPT: launche_ChatGPT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LG(R)>,
+                <&macro_wait_time 500>,
+                <&kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp C &kp H &kp A &kp T &kp G &kp P &kp T &kp DOT &kp C &kp O &kp M &kp FSLH &kp J &kp A &kp MINUS &kp LS(J) &kp LS(P) &kp FSLH>,
+                <&macro_wait_time 1>,
+                <&kp ENTER>;
+
+            label = "LAUNCHE_CHATGPT";
+        };
+
+        launche_freee: launche_freee {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LG(R)>,
+                <&macro_wait_time 500>,
+                <&macro_wait_time 1>,
+                <&kp ENTER &kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp S &kp E &kp C &kp U &kp R &kp E &kp DOT &kp F &kp R &kp E &kp E &kp E &kp DOT &kp C &kp O &kp DOT &kp J &kp P &kp FSLH>;
+
+            label = "LAUNCHE_FREEE";
+        };
     };
 
     keymap {
