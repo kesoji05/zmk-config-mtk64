@@ -46,7 +46,7 @@
 
         KP_DEL {
             bindings = <&kp DELETE>;
-            key-positions = <21 20>;
+            key-positions = <32 31>;
         };
 
         KP_F2 {
