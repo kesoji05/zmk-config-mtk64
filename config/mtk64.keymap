@@ -78,6 +78,16 @@
             bindings = <&kp RCTRL>;
             key-positions = <25 26 27>;
         };
+
+        KP_F5 {
+            bindings = <&kp F5>;
+            key-positions = <28 27>;
+        };
+
+        KP_ALTF4 {
+            bindings = <&kp LA(F4)>;
+            key-positions = <55 32 31 33>;
+        };
     };
 
     macros {
