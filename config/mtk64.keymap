@@ -125,9 +125,12 @@
                 <&kp LEFT_ALT>,
                 <&macro_tap>,
                 <&kp TAB>,
+                <&macro_tap>,
+                <&to 4>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&kp LEFT_ALT>;
+                <&kp LEFT_ALT>,
+                <&macro_press>;
 
             label = "ALT_TAB_STAY";
         };
@@ -229,7 +232,7 @@
 
         layer_3 {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(UP_ARROW)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LC(LS(TAB))  &kp LA(TAB)  &reg_folder  &trans  &trans  &kp LC(T)  &kp LC(PG_UP)  &kp LC(PG_DN)  &kp LC(W)  &kp LEFT_SHIFT  &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LG(X)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT)  &kp LG(UP_ARROW)  &kp LG(RIGHT)  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans  &mkp RCLK  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &ht_tab_alt 0 TAB  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LC(LS(TAB))  &kp LA(TAB)  &reg_folder  &trans  &trans  &kp LC(T)  &kp LC(PG_UP)  &kp LC(PG_DN)  &kp LC(W)  &kp LEFT_SHIFT  &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LG(X)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LA(LEFT))  &kp LG(LA(UP_ARROW))  &kp LG(LA(RIGHT))  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans  &mkp RCLK  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
