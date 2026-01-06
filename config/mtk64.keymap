@@ -51,54 +51,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        KP_DEL {
-            bindings = <&kp DELETE>;
-            key-positions = <27 28>;
-        };
-
-        KP_F2 {
-            bindings = <&kp F2>;
-            key-positions = <25 26>;
-        };
-
-        KP_F4 {
-            bindings = <&kp F4>;
-            key-positions = <13 14>;
-        };
-
-        KP_RCTRL {
-            bindings = <&kp RCTRL>;
-            key-positions = <25 27 26>;
-        };
-
-        bootreloaderR {
-            bindings = <&bootloader>;
-            key-positions = <19 20 21 22>;
-        };
-
-        bootreloaderL {
-            bindings = <&bootloader>;
-            key-positions = <13 14 15 16>;
-        };
-
-        RCTRL_L {
-            bindings = <&kp RCTRL>;
-            key-positions = <25 26 27>;
-        };
-
-        KP_F5 {
-            bindings = <&kp F5>;
-            key-positions = <38 37>;
-        };
-
-        KP_ALTF4 {
-            bindings = <&kp LA(F4)>;
-            key-positions = <52 26 28 27>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         reg_folder: reg_folder {
