@@ -184,7 +184,7 @@
 
         layer_4CharOnly {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp RIGHT  &kp DELETE  &trans  &trans  &trans  &kp INTERNATIONAL_3  &kp RBKT  &kp NUHS  &kp INTERNATIONAL_1  &trans  &kp W  &kp LC(PG_UP)  &trans  &kp LC(PAGE_DOWN)  &kp T  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DELETE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp RIGHT  &kp DELETE  &trans  &trans  &trans  &kp INTERNATIONAL_3  &kp RBKT  &kp NUHS  &kp INTERNATIONAL_1  &trans  &kp LC(W)  &kp LC(PG_UP)  &trans  &kp LC(PAGE_DOWN)  &kp LC(T)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DELETE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
