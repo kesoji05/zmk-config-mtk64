@@ -96,7 +96,7 @@
 
         KP_ALTF4 {
             bindings = <&kp LA(F4)>;
-            key-positions = <52 28 27 29>;
+            key-positions = <52 26 28 27>;
         };
     };
 
