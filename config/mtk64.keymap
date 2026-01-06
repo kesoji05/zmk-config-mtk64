@@ -136,81 +136,11 @@
             label = "ALT_TAB_STAY";
         };
 
-        launch_notion: launch_notion {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LG(R)>,
-                <&macro_wait_time 500>,
-                <&kp H>,
-                <&macro_wait_time 1>,
-                <&kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp W &kp W &kp W &kp DOT &kp N &kp O &kp T &kp I &kp O &kp N &kp DOT &kp S &kp O &kp ENTER>;
-
-            label = "LAUNCH_NOTION";
-        };
-
-        DO_NOT_EDIT: DO_NOT_EDIT {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LG(R)>,
-                <&macro_wait_time 500>,
-                <&macro_wait_time 1>,
-                <&kp ENTER>;
-
-            label = "DO_NOT_EDIT";
-        };
-
-        launch_X: launche_X {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LG(R)>,
-                <&macro_wait_time 500>,
-                <&kp H>,
-                <&macro_wait_time 1>,
-                <&kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp X &kp DOT &kp C &kp O &kp M &kp FSLH &kp H &kp O &kp M &kp E &kp QMARK &kp L &kp A &kp N &kp G &kp EQUAL &kp J &kp A &kp ENTER>;
-
-            label = "LAUNCHE_X";
-        };
-
-        launch_ChatGPT: launche_ChatGPT {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LG(R)>,
-                <&macro_wait_time 500>,
-                <&kp H>,
-                <&macro_wait_time 1>,
-                <&kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp C &kp H &kp A &kp T &kp G &kp P &kp T &kp DOT &kp C &kp O &kp M &kp FSLH &kp J &kp A &kp MINUS &kp LS(J) &kp LS(P) &kp FSLH &kp ENTER>;
-
-            label = "LAUNCHE_CHATGPT";
-        };
-
-        launch_freee: launche_freee {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LG(R)>,
-                <&macro_wait_time 500>,
-                <&kp H>,
-                <&macro_wait_time 1>,
-                <&kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp S &kp E &kp C &kp U &kp R &kp E &kp DOT &kp F &kp R &kp E &kp E &kp E &kp DOT &kp C &kp O &kp DOT &kp J &kp P &kp FSLH &kp ENTER>;
-
-            label = "LAUNCHE_FREEE";
-        };
-
         goto_hub: goto_hub {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LC(L)>,
-                <&macro_wait_time 100>,
-                <&kp RET &kp PRCNT &kp LS(U) &kp LS(S) &kp LS(E) &kp LS(R) &kp LS(P) &kp LS(R) &kp LS(O) &kp LS(F) &kp LS(I) &kp LS(L) &kp LS(E) &kp PRCNT &kp FSLH &kp LS(O) &kp N &kp E &kp LS(D) &kp R &kp I &kp V &kp E &kp FSLH &kp LS(S) &kp E &kp T &kp T &kp I &kp N &kp G &kp S &kp FSLH &kp LS(S) &kp H &kp O &kp R &kp T &kp C &kp U &kp T &kp S &kp RET>;
-
+            bindings = <&kp LC(LA(N0))>;
             label = "GOTO_HUB";
-            wait-ms = <10>;
-            tap-ms = <30>;
         };
     };
 
