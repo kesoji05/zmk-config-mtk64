@@ -206,13 +206,13 @@
             bindings =
                 <&kp LC(L)>,
                 <&macro_wait_time 100>,
-                <&kp PRCNT &kp LS(U) &kp LS(S) &kp LS(E) &kp LS(R) &kp LS(P) &kp LS(R) &kp LS(O) &kp LS(F) &kp LS(I) &kp LS(L) &kp LS(E) &kp PRCNT &kp BSLH &kp LS(O) &kp N &kp E &kp LS(D) &kp R &kp I &kp V &kp E &kp BSLH &kp LS(S) &kp H &kp O &kp R &kp T &kp C &kp U &kp T &kp S>,
+                <&kp RET &kp PRCNT &kp LS(U) &kp LS(S) &kp LS(E) &kp LS(R) &kp LS(P) &kp LS(R) &kp LS(O) &kp LS(F) &kp LS(I) &kp LS(L) &kp LS(E) &kp PRCNT &kp FSLH &kp LS(O) &kp N &kp E &kp LS(D) &kp R &kp I &kp V &kp E &kp FSLH &kp LS(S) &kp E &kp T &kp T &kp I &kp N &kp G &kp S &kp FSLH &kp LS(S) &kp H &kp O &kp R &kp T &kp C &kp U &kp T &kp S>,
                 <&macro_wait_time 100>,
                 <&kp RET>;
 
             label = "GOTO_HUB";
             wait-ms = <0>;
-            tap-ms = <0>;
+            tap-ms = <5>;
         };
     };
 
@@ -256,7 +256,7 @@
 
         layer_4CharOnly {
             bindings = <
-&trans  &trans  &kp UP_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &trans  &kp INTERNATIONAL_3  &kp RBKT  &kp NUHS  &kp INTERNATIONAL_1  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DELETE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp UP_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &trans  &kp INTERNATIONAL_3  &kp RBKT  &kp NUHS  &kp INTERNATIONAL_1  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(PG_UP)  &trans  &kp LC(PG_DN)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DELETE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
