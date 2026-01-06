@@ -199,6 +199,20 @@
 
             label = "LAUNCHE_FREEE";
         };
+
+        goto_hub: goto_hub {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LC(L)>,
+                <&macro_wait_time 100>,
+                <&kp PRCNT &kp LS(U) &kp LS(S) &kp LS(E) &kp LS(R) &kp LS(P) &kp LS(R) &kp LS(O) &kp LS(F) &kp LS(I) &kp LS(L) &kp LS(E) &kp PRCNT &kp BSLH &kp LS(O) &kp N &kp E &kp LS(D) &kp R &kp I &kp V &kp E &kp BSLH &kp LS(S) &kp H &kp O &kp R &kp T &kp C &kp U &kp T &kp S &kp RET>,
+                <&macro_wait_time 100>;
+
+            label = "GOTO_HUB";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
     };
 
     keymap {
@@ -233,7 +247,7 @@
 
         layer_3 {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &ht_tab_alt 0 TAB  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LC(LS(TAB))  &kp LA(TAB)  &reg_folder  &trans  &trans  &kp LC(T)  &kp LC(PG_UP)  &kp LC(PG_DN)  &kp LC(W)  &kp LEFT_SHIFT  &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LG(X)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LA(LEFT))  &kp LG(LA(UP_ARROW))  &kp LG(LA(RIGHT))  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans  &mkp RCLK  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &ht_tab_alt 0 TAB  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LC(LS(TAB))  &kp LA(TAB)  &reg_folder  &trans  &trans  &kp LC(T)  &kp LC(PG_UP)  &kp LC(PG_DN)  &kp LC(W)  &kp LEFT_SHIFT  &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LG(X)  &goto_hub  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LA(LEFT))  &kp LG(LA(UP_ARROW))  &kp LG(LA(RIGHT))  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans  &mkp RCLK  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
