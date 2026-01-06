@@ -56,22 +56,22 @@
 
         KP_DEL {
             bindings = <&kp DELETE>;
-            key-positions = <32 31>;
+            key-positions = <27 28>;
         };
 
         KP_F2 {
             bindings = <&kp F2>;
-            key-positions = <13 14>;
+            key-positions = <25 26>;
         };
 
         KP_F4 {
             bindings = <&kp F4>;
-            key-positions = <26 25>;
+            key-positions = <13 14>;
         };
 
         KP_RCTRL {
             bindings = <&kp RCTRL>;
-            key-positions = <31 32 33>;
+            key-positions = <25 27 26>;
         };
 
         bootreloaderR {
@@ -91,12 +91,12 @@
 
         KP_F5 {
             bindings = <&kp F5>;
-            key-positions = <28 27>;
+            key-positions = <38 37>;
         };
 
         KP_ALTF4 {
             bindings = <&kp LA(F4)>;
-            key-positions = <55 32 31 33>;
+            key-positions = <52 28 27 29>;
         };
     };
 
@@ -202,7 +202,7 @@
 
         default_layer {
             bindings = <
-&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &ht_tab_alt 0 TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &lt 4 SEMICOLON  &lt 3 GRAVE  &kp A  &kp S  &kp D  &kp F  &kp G  &lt 2 H  &lt 2 J  &lt 2 K  &lt 2 L  &kp UP_ARROW  &lt 5 APOS  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp INT_RO  &kp LBKT  &kp N  &kp M  &lt 3 SLASH  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LCTRL  &kp LGUI  &mkp LCLK  &lt 2 SPACE  &mt LWIN DELETE  &lt 3 ENTER  &kp COMMA  &kp DOT  &kp LS(LG(S))  &WINR_ALT_UP  &mkp RCLK  &kp RCTRL  &kp ENTER  &tog 2  &kp LEFT_ALT  &mt LEFT_WIN BACKSPACE  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3
+&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &ht_tab_alt 0 TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &lt 4 SEMICOLON  &lt 3 GRAVE  &kp A  &kp S  &kp D  &kp F  &kp G  &lt 2 H  &lt 2 J  &lt 2 K  &lt 2 L  &kp UP_ARROW  &lt 5 APOS  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp INT_RO  &kp LBKT  &kp N  &kp M  &lt 3 SLASH  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LCTRL  &kp LGUI  &mkp LCLK  &lt 2 SPACE  &mt LWIN DELETE  &lt 3 ENTER  &kp COMMA  &kp DOT  &kp LS(LG(S))  &kp LG(R)  &mkp RCLK  &kp RCTRL  &kp ENTER  &tog 2  &kp LEFT_ALT  &mt LEFT_WIN BACKSPACE  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3
             >;
 
             sensor-bindings =
