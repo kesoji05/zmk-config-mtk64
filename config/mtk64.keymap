@@ -206,7 +206,7 @@
 
         default_layer {
             bindings = <
-&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &lt 4 TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &lt 4 SEMICOLON  &lt 3 GRAVE  &kp A  &kp S  &kp D  &kp F  &kp G  &lt 2 H  &lt 2 J  &lt 2 K  &lt 2 L  &kp UP_ARROW  &lt 5 APOS  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp DEL  &mt LBKT INT_RO  &kp N  &kp M  &lt 3 SLASH  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LCTRL  &kp LGUI  &mkp LCLK  &lt 2 SPACE  &mt LWIN DELETE  &lt 3 ENTER  &kp COMMA  &kp DOT  &kp LS(LG(S))  &kp LG(R)  &mkp RCLK  &kp RCTRL  &kp ENTER  &tog 2  &kp LEFT_ALT  &mt RCTRL BACKSPACE  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3
+&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &lt 4 TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &lt 4 SEMICOLON  &lt 3 GRAVE  &kp A  &kp S  &kp D  &kp F  &kp G  &lt 2 H  &lt 2 J  &lt 2 K  &lt 2 L  &kp UP_ARROW  &lt 5 APOS  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp DEL  &mt LBKT INT_RO  &kp N  &kp M  &lt 3 SLASH  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LCTRL  &kp LGUI  &mkp LCLK  &lt 2 SPACE  &mt LWIN DELETE  &lt 3 ENTER  &kp COMMA  &kp DOT  &mt LS(LG(S)) LG(E)  &mt LG(R) RCTRL  &mkp RCLK  &kp RCTRL  &kp ENTER  &tog 2  &kp LEFT_ALT  &mt RCTRL BACKSPACE  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3
             >;
 
             sensor-bindings =
@@ -241,7 +241,7 @@
 
         layer_4CharOnly {
             bindings = <
-&trans  &trans  &kp UP_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &trans  &kp INTERNATIONAL_3  &kp RBKT  &kp NUHS  &kp INTERNATIONAL_1  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp UP_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &trans  &kp INTERNATIONAL_3  &kp RBKT  &kp NUHS  &kp INTERNATIONAL_1  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DELETE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
