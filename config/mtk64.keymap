@@ -248,7 +248,7 @@
 
         layer_3 {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &ht_tab_alt 0 TAB  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LC(LS(TAB))  &kp LA(TAB)  &reg_folder  &trans  &trans  &kp LC(T)  &kp LC(PG_UP)  &kp LC(PG_DN)  &kp LC(W)  &kp LEFT_SHIFT  &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LG(X)  &goto_hub  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LA(LEFT))  &kp LG(LA(UP_ARROW))  &kp LG(LA(RIGHT))  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans  &mkp RCLK  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &ht_tab_alt 0 TAB  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LC(LS(TAB))  &kp LA(TAB)  &reg_folder  &trans  &trans  &kp LC(T)  &kp LC(PG_UP)  &kp LC(PG_DN)  &kp LC(W)  &kp LEFT_SHIFT  &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LA(X)  &goto_hub  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LA(LEFT))  &kp LG(LA(UP_ARROW))  &kp LG(LA(RIGHT))  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans  &mkp RCLK  &trans  &trans  &trans  &trans  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
